@@ -1,0 +1,11 @@
+$fontFamily:'\5FAE\8F6F\96C5\9ED1';
+$fontColor:#333;
+$fontSize:14px;
+@mixin autoWidth($num:1200px) {
+	width:$num;
+	margin:0 auto;
+}
+@mixin height($val) {
+	height: $val;
+	line-height: $val;
+}
