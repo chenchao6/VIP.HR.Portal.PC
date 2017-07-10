@@ -1,0 +1,167 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$-image-remind-name: 'Image_remind';
+$-image-remind-x: 0px;
+$-image-remind-y: 131px;
+$-image-remind-offset-x: 0px;
+$-image-remind-offset-y: -131px;
+$-image-remind-width: 111px;
+$-image-remind-height: 33px;
+$-image-remind-total-width: 198px;
+$-image-remind-total-height: 164px;
+$-image-remind-image: '/images/app_icon.png';
+$-image-remind: (0px, 131px, 0px, -131px, 111px, 33px, 198px, 164px, '/images/app_icon.png', 'Image_remind', );
+$gray-left-name: 'gray_left';
+$gray-left-x: 0px;
+$gray-left-y: 46px;
+$gray-left-offset-x: 0px;
+$gray-left-offset-y: -46px;
+$gray-left-width: 47px;
+$gray-left-height: 85px;
+$gray-left-total-width: 198px;
+$gray-left-total-height: 164px;
+$gray-left-image: '/images/app_icon.png';
+$gray-left: (0px, 46px, 0px, -46px, 47px, 85px, 198px, 164px, '/images/app_icon.png', 'gray_left', );
+$gray-right-name: 'gray_right';
+$gray-right-x: 47px;
+$gray-right-y: 46px;
+$gray-right-offset-x: -47px;
+$gray-right-offset-y: -46px;
+$gray-right-width: 47px;
+$gray-right-height: 85px;
+$gray-right-total-width: 198px;
+$gray-right-total-height: 164px;
+$gray-right-image: '/images/app_icon.png';
+$gray-right: (47px, 46px, -47px, -46px, 47px, 85px, 198px, 164px, '/images/app_icon.png', 'gray_right', );
+$iocn-collect-name: 'iocn_collect';
+$iocn-collect-x: 111px;
+$iocn-collect-y: 131px;
+$iocn-collect-offset-x: -111px;
+$iocn-collect-offset-y: -131px;
+$iocn-collect-width: 25px;
+$iocn-collect-height: 25px;
+$iocn-collect-total-width: 198px;
+$iocn-collect-total-height: 164px;
+$iocn-collect-image: '/images/app_icon.png';
+$iocn-collect: (111px, 131px, -111px, -131px, 25px, 25px, 198px, 164px, '/images/app_icon.png', 'iocn_collect', );
+$iocn-seek-name: 'iocn_seek';
+$iocn-seek-x: 136px;
+$iocn-seek-y: 131px;
+$iocn-seek-offset-x: -136px;
+$iocn-seek-offset-y: -131px;
+$iocn-seek-width: 20px;
+$iocn-seek-height: 20px;
+$iocn-seek-total-width: 198px;
+$iocn-seek-total-height: 164px;
+$iocn-seek-image: '/images/app_icon.png';
+$iocn-seek: (136px, 131px, -136px, -131px, 20px, 20px, 198px, 164px, '/images/app_icon.png', 'iocn_seek', );
+$logo-name: 'logo';
+$logo-x: 0px;
+$logo-y: 0px;
+$logo-offset-x: 0px;
+$logo-offset-y: 0px;
+$logo-width: 198px;
+$logo-height: 46px;
+$logo-total-width: 198px;
+$logo-total-height: 164px;
+$logo-image: '/images/app_icon.png';
+$logo: (0px, 0px, 0px, 0px, 198px, 46px, 198px, 164px, '/images/app_icon.png', 'logo', );
+$purple-left-name: 'purple_left';
+$purple-left-x: 94px;
+$purple-left-y: 46px;
+$purple-left-offset-x: -94px;
+$purple-left-offset-y: -46px;
+$purple-left-width: 47px;
+$purple-left-height: 85px;
+$purple-left-total-width: 198px;
+$purple-left-total-height: 164px;
+$purple-left-image: '/images/app_icon.png';
+$purple-left: (94px, 46px, -94px, -46px, 47px, 85px, 198px, 164px, '/images/app_icon.png', 'purple_left', );
+$purple-right-name: 'purple_right';
+$purple-right-x: 141px;
+$purple-right-y: 46px;
+$purple-right-offset-x: -141px;
+$purple-right-offset-y: -46px;
+$purple-right-width: 47px;
+$purple-right-height: 85px;
+$purple-right-total-width: 198px;
+$purple-right-total-height: 164px;
+$purple-right-image: '/images/app_icon.png';
+$purple-right: (141px, 46px, -141px, -46px, 47px, 85px, 198px, 164px, '/images/app_icon.png', 'purple_right', );
+$spritesheet-width: 198px;
+$spritesheet-height: 164px;
+$spritesheet-image: '/images/app_icon.png';
+$spritesheet-sprites: ($-image-remind, $gray-left, $gray-right, $iocn-collect, $iocn-seek, $logo, $purple-left, $purple-right, );
+$spritesheet: (198px, 164px, '/images/app_icon.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

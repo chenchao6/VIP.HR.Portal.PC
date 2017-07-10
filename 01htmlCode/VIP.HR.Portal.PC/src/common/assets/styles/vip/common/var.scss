@@ -1,0 +1,73 @@
+/* Transition
+  -------------------------- */
+$all-transition: all .3s cubic-bezier(.645,.045,.355,1) !default;
+$fade-transition: opacity 300ms cubic-bezier(0.23, 1, 0.32, 1) !default;
+$fade-linear-transition: opacity 200ms linear !default;
+$md-fade-transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1) 100ms, opacity 300ms cubic-bezier(0.23, 1, 0.32, 1) 100ms !default;
+$border-transition-base: border-color .2s cubic-bezier(.645,.045,.355,1) !default;
+$color-transition-base: color .2s cubic-bezier(.645,.045,.355,1) !default;
+/* Colors
+  -------------------------- */
+$color-primary: #ea41a6 !default;
+$color-success: #13ce66 !default;
+$color-warning: #f7ba2a !default;
+$color-danger: #ff4949 !default;
+$color-info: #50bfff !default;
+$color-blue: #2e90fe !default;
+$color-blue-light: #5da9ff !default;
+$color-blue-lighter: rgba($color-blue, 0.12) !default;
+$color-white: #fff !default;
+$color-black: #000 !default;
+$color-grey: #dadada !default;
+/* Link
+  -------------------------- */
+$link-color: #475669 !default;
+$link-hover-color: $color-primary !default;
+/* Border
+  -------------------------- */
+$border-width-base: 1px !default;
+$border-style-base: solid !default;
+$border-color-base: $color-grey !default;
+$border-color-hover: $color-grey !default;
+$border-base: $border-width-base $border-style-base $border-color-base !default;
+$border-radius-base: 4px !default;
+$border-radius-small: 2px !default;
+$border-radius-circle: 100% !default;
+$shadow-base: 0 0 2px rgba($color-black, 0.18), 0 0 1px $color-blue-light !default;
+/* Box-shadow
+  -------------------------- */
+$box-shadow-base: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04) !default;
+$box-shadow-dark: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .12) !default;
+/* Fill
+  -------------------------- */
+$fill-base: $color-white !default;
+/* Font
+  -------------------------- */
+$font-size-base: 14px !default;
+$font-color-base: #333 !default; // 主字体颜色
+$font-color-light-base: #666 !default; // 浅颜色字体
+$font-color-assist-base: #999 !default; // 辅助字体颜色
+$font-color-disabled-base: #aaa !default; // 禁用状态字体颜色
+$font-color-placeholder-base: #aaa !default; // 输入框提示字体颜色
+/* Size
+  -------------------------- */
+$size-base: 14px !default;
+$size-small: 12px !default;
+$size-big: 16px !default;
+/* z-index
+  -------------------------- */
+$index-normal: 1 !default;
+$index-top: 1000 !default;
+$index-popper: 2000 !default;
+/* Disable base
+  -------------------------- */
+$disabled-fill-base: #EFF2F7 !default;
+$disabled-color-base: #aaa !default;
+$disabled-border-base: #dadada !default;
+/* Badge
+  -------------------------- */
+$badge-fill: $color-primary !default;
+$badge-radius: 10px !default;
+$badge-font-size: 12px !default;
+$badge-padding: 6px !default;
+$badge-size: 18px !default;
