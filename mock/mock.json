@@ -1,0 +1,9 @@
+{
+  "/api/Event/GetEvents": {
+    "blesses": [],
+    "totalCount": 0
+  },
+  "/api/Banner/GetBanners": {
+    
+  }
+}
