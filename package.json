@@ -2,7 +2,7 @@
   "name": "vip.hr.portal.pc",
   "version": "1.0.0",
   "description": "vip.hr.portal.pc",
-  "author": "su9er.liang",
+  "author": "vip",
   "scripts": {
     "gulp": "gulp structure",
     "dev": "node build/dev-server.js",
